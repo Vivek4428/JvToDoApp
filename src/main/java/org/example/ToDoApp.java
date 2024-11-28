@@ -172,7 +172,7 @@ public class ToDoApp extends JFrame {
         MongoClient mongoClient = null;
         try {
             // Establish MongoDB connection
-            mongoClient = MongoClients.create("mongodb+srv://vivekmon4428:Vivek1234@cluster0.jkama.mongodb.net/?retryWrites=true&w=majority");
+            mongoClient = MongoClients.create("mongodb+srv://user:password@cluster0.jkama.mongodb.net/?retryWrites=true&w=majority");
             MongoDatabase database = mongoClient.getDatabase("ToDoApp");
 
             // Launch the To-Do List GUI
